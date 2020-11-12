@@ -1,0 +1,60 @@
+.heading {
+  color: #3a3a3a;
+  font-family: 'ProximaNovaT';
+  font-size: 55px;
+  margin-top: 15px;
+}
+.subHeading {
+  text-align: center;
+  color: #838383;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 21px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footerColumnOne {
+  color: #848484;
+  margin: 0 auto;
+  font-size: 17px;
+}
+.footerColumnSubOne {
+  color: #848484;
+  margin: 0 auto;
+  font-size: 17px;
+  text-align: left;
+}
+.footerColumnTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footerImageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerImage {
+  width: 80%;
+}
+.signature {
+  height: 50;
+  width: 80%;
+}
+.love {
+  color: red;
+  margin-right: 1px;
+  margin-left: 1px;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { CustomAvatar } from '../CustomAvatar/CustomAvatar';
 
-export const About = () => {
+export const AboutSection = () => {
   return (
     <div
       style={{

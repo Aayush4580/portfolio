@@ -17,6 +17,7 @@ export const CustomNumberSection = () => {
               value={120000}
               formatValue={formatValue}
               duration={1800}
+              delay={1000}
             />
           </div>
           <div>lines of code</div>
@@ -33,6 +34,7 @@ export const CustomNumberSection = () => {
               value={23920000}
               formatValue={formatValue}
               duration={1800}
+              delay={1000}
             />
           </div>
           <div>pixels rendered</div>
@@ -49,6 +51,7 @@ export const CustomNumberSection = () => {
               value={52}
               formatValue={formatValue}
               duration={1800}
+              delay={1000}
             />
           </div>
           <div>youtube videos</div>
@@ -65,6 +68,7 @@ export const CustomNumberSection = () => {
               value={15}
               formatValue={formatValue}
               duration={1800}
+              delay={1000}
             />
           </div>
           <div>projects completed</div>

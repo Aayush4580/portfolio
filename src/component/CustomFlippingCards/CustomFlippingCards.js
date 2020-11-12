@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import styles from './CustomFlippingCardsStyle';
 
-export const CustomFlippingCards = ({ image, text }) => {
+export const CustomFlippingCards = ({ image, headerText }) => {
   const [isFlipped, setFlipped] = useState(false);
   return (
     <div style={styles.pointer}>
@@ -20,7 +20,7 @@ export const CustomFlippingCards = ({ image, text }) => {
           <div>
             <img src={image} alt="" style={styles.backSideImage} />
 
-            <div>ddd</div>
+            <div style={styles.backsideText}>{headerText}</div>
           </div>
         </div>
       </ReactCardFlip>

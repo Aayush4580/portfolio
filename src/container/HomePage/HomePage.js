@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Particles from 'react-particles-js';
 import './HomePageStyle.css';
 import $ from 'jquery';
 import { headerAnimation } from '../../util/util';
-import { About } from '../../component/About/About';
+import { AboutSection } from '../../component/AboutSection/AboutSection';
 import { CustomNumberSection } from '../../component/CustomNumberSection/CustomNumberSection';
 import { CustomProjectCardsSection } from '../../component/CustomProjectCardsSection/CustomProjectCardsSection';
+import { FooterSection } from '../../component/FooterSection/FooterSection';
 
 export const HomePage = () => {
   useEffect(() => {
@@ -125,10 +126,12 @@ export const HomePage = () => {
           <h3 className="button">Coffee with me</h3>
         </div>
       </div>
-      <About />
+      <AboutSection />
       <div className="divider" />
       <CustomNumberSection />
       <CustomProjectCardsSection />
+
+      <FooterSection />
     </div>
   );
 };

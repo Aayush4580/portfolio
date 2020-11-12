@@ -32,6 +32,10 @@ const CustomFlippingCardsStyle = {
     borderTopLeftRadius: 5,
     borderTopRightRadius: 5,
   },
+  backsideText: {
+    marginTop: 10,
+    fontWeight: '500',
+  },
 };
 
 export default CustomFlippingCardsStyle;
