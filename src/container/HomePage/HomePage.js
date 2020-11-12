@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import Particles from 'react-particles-js';
 import './HomePageStyle.css';
 import $ from 'jquery';
