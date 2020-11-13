@@ -13,6 +13,9 @@ export const CustomAvatar = () => {
       <Avatar alt="Remy Sharp" src={face} className={classes.large} />
       <div className="containerTwo">
         <YouTube
+          onClick={() =>
+            window.open('https://www.youtube.com/aayushBhattacharya')
+          }
           style={{
             cursor: 'pointer',
             height: 60,
@@ -24,6 +27,11 @@ export const CustomAvatar = () => {
           filled
         </YouTube>
         <LinkedIn
+          onClick={() =>
+            window.open(
+              'https://www.linkedin.com/in/aayush-bhattacharya-75784a123/'
+            )
+          }
           style={{
             cursor: 'pointer',
             height: 50,

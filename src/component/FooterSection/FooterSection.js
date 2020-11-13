@@ -10,7 +10,6 @@ import React from 'react';
 import footerImage from '../../assets/footerImage.jpg';
 import signature from '../../assets/signature.png';
 import instagram from '../../assets/instagram.png';
-import styles from '../CustomProjectCardsSection/CustomProjectCardsSectionStyle';
 import './FooterSection.css';
 
 export const FooterSection = () => {
@@ -51,6 +50,9 @@ export const FooterSection = () => {
           </div>
           <div className="footerImageSection">
             <YouTube
+              onClick={() =>
+                window.open('https://www.youtube.com/aayushBhattacharya')
+              }
               style={{
                 cursor: 'pointer',
                 height: 30,
@@ -62,6 +64,11 @@ export const FooterSection = () => {
               filled
             </YouTube>
             <LinkedIn
+              onClick={() =>
+                window.open(
+                  'https://www.linkedin.com/in/aayush-bhattacharya-75784a123/'
+                )
+              }
               style={{
                 cursor: 'pointer',
                 height: 20,
@@ -99,12 +106,7 @@ export const FooterSection = () => {
         </div>
       </div>
       <div className="footerImageSection">
-        <img
-          src={footerImage}
-          alt=""
-          className="footerImage"
-          style={styles.signature}
-        />
+        <img src={footerImage} alt="" className="footerImage" />
       </div>
     </div>
   );
