@@ -1,22 +1,17 @@
 import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import styles from './CustomFlippingCardsStyle';
+import './CustomFlippingCardsStyle.css';
 
 export const CustomFlippingCards = ({ image, headerText }) => {
   const [isFlipped, setFlipped] = useState(false);
   return (
-    <div style={styles.pointer}>
+    <div className="pointer">
       <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
-        <div
-          style={styles.frontSide}
-          onMouseEnter={() => setFlipped(!isFlipped)}
-        >
+        <div className="frontSide" onMouseEnter={() => setFlipped(!isFlipped)}>
           <img src={image} alt="" style={styles.frontSideImage} />
         </div>
-        <div
-          style={styles.backSide}
-          onMouseLeave={() => setFlipped(!isFlipped)}
-        >
+        <div className="backSide" onMouseLeave={() => setFlipped(!isFlipped)}>
           <div>
             <img src={image} alt="" style={styles.backSideImage} />
 
