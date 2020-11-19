@@ -1,11 +1,12 @@
 import React from 'react';
 import AnimatedNumber from 'animated-number-react';
+import './CustomNumberSection.css';
 const formatValue = (value) => value.toFixed(0);
 export const CustomNumberSection = () => {
   return (
     <div>
       <div className="flexDirectionRow">
-        <div style={{ width: '20%' }}>
+        <div className="numberSubContainer">
           <div
             style={{
               fontSize: '40px',
@@ -22,7 +23,7 @@ export const CustomNumberSection = () => {
           </div>
           <div>lines of code</div>
         </div>
-        <div style={{ width: '20%' }}>
+        <div className="numberSubContainer">
           <div
             style={{
               fontSize: '40px',
@@ -39,7 +40,7 @@ export const CustomNumberSection = () => {
           </div>
           <div>pixels rendered</div>
         </div>
-        <div style={{ width: '20%' }}>
+        <div className="numberSubContainer">
           <div
             style={{
               fontSize: '40px',
@@ -56,7 +57,7 @@ export const CustomNumberSection = () => {
           </div>
           <div>youtube videos</div>
         </div>
-        <div style={{ width: '20%' }}>
+        <div className="numberSubContainer">
           <div
             style={{
               fontSize: '40px',

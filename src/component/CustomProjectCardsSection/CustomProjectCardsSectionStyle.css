@@ -1,0 +1,30 @@
+.header {
+  color: rgb(58, 58, 58);
+  font-family: 'ProximaNovaT';
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}

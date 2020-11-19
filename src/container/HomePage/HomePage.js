@@ -16,6 +16,7 @@ export const HomePage = () => {
   return (
     <div>
       <Particles
+        className="particle"
         params={{
           particles: {
             number: {
@@ -111,7 +112,6 @@ export const HomePage = () => {
         </div>
         <div className="cd-intro">
           <h1 className="cd-headline clip is-full-width">
-            {/* <span>My favorite food is &nbsp;</span> */}
             <span className="cd-words-wrapper">
               <b className="is-visible">A Full Stack Developer</b>
               <b>A Hybrid App Developer</b>
@@ -128,9 +128,8 @@ export const HomePage = () => {
       </div>
       <AboutSection />
       <div className="divider" />
-      <CustomNumberSection />
+      <CustomNumberSection className="numberSection" />
       <CustomProjectCardsSection />
-
       <FooterSection />
     </div>
   );

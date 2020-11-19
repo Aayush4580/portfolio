@@ -58,3 +58,13 @@
   margin-right: 1px;
   margin-left: 1px;
 }
+
+@media only screen and (max-width: 600px) {
+  .footerRow {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerImage {
+    width: 100%;
+  }
+}

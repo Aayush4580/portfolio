@@ -1,0 +1,52 @@
+.aboutSectionContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutSection {
+  width: 35%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.aboutText {
+  color: #3a3a3a;
+  font-family: 'ProximaNovaT';
+  font-size: 65px;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutSectionContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .aboutText {
+    font-size: 50px;
+  }
+  .aboutSection {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

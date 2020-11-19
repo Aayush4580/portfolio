@@ -4,19 +4,14 @@ import webApp from '../../assets/projects/webApp.jpg';
 import analytics from '../../assets/projects/analytics.jpg';
 import chatbot from '../../assets/projects/chatbot.jpg';
 import app from '../../assets/projects/app.jpg';
-import styles from './CustomProjectCardsSectionStyle';
+import './CustomProjectCardsSectionStyle.css';
 
 export const CustomProjectCardsSection = () => {
   return (
-    <div style={{ marginTop: 30 }}>
-      <div style={styles.header}>Projects</div>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-        }}
-      >
-        <div style={styles.grid}>
+    <div style={{ marginTop: 20 }}>
+      <div className="header">Projects</div>
+      <div className="container">
+        <div className="grid">
           <CustomFlippingCards
             headerText={'Hybrid App Development'}
             image={app}
@@ -26,7 +21,7 @@ export const CustomProjectCardsSection = () => {
             image={chatbot}
           />
         </div>
-        <div style={styles.grid}>
+        <div className="grid">
           <CustomFlippingCards
             headerText={'Machine Learning'}
             image={analytics}
