@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Particles from 'react-particles-js';
 import './HomePageStyle.css';
 import $ from 'jquery';
@@ -8,11 +8,13 @@ import { CustomNumberSection } from '../../component/CustomNumberSection/CustomN
 import { CustomProjectCardsSection } from '../../component/CustomProjectCardsSection/CustomProjectCardsSection';
 import { FooterSection } from '../../component/FooterSection/FooterSection';
 import { TransitionsModal } from '../../component/TransitionsModal/TransitionsModal';
+import scroll from '../../assets/scroll.gif';
+
 export const HomePage = () => {
   useEffect(() => {
     headerAnimation($);
   }, []);
-  const [showModal, setShowModal] = useState(false);
+
   return (
     <div>
       <Particles
@@ -124,6 +126,7 @@ export const HomePage = () => {
         </div>
         <div>
           <TransitionsModal buttonText={`Coffee with Me`} />
+          <img alt="" className="scroll" src={scroll} />
         </div>
       </div>
       <AboutSection />

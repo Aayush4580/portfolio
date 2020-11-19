@@ -1,6 +1,7 @@
-.test {
-  width: 100%;
-  background: linear-gradient(135deg, #682d8ee6 0, #e21567e8 100%);
+.scroll {
+  height: 120px;
+  width: 100;
+  margin-right: 15px;
 }
 .navItem {
   margin-top: 10px;

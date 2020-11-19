@@ -20,9 +20,9 @@ export const AboutSection = () => {
         <div className="aboutText">About Me</div>
         <div style={{ textAlign: 'left', lineHeight: '1.5' }}>
           Hi I am Aayush Bhattacharya, a 27 year old Full Stack developer,
-          YouTuber, and a Digital Marketer living in Kolkata, India. I am a
-          coding nerd with Electrical Engineering background, currently working
-          with awesome folks at Deloitte.
+          YouTuber, and an Artist living in Kolkata, India. I am a coding nerd
+          with Electrical Engineering background, currently working with awesome
+          folks at Deloitte.
           <br />
           <br />
           Have a look at my YouTube Channel, skills or just connect with me on
