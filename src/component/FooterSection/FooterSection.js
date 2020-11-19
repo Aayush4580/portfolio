@@ -11,14 +11,18 @@ import footerImage from '../../assets/footerImage.jpg';
 import signature from '../../assets/signature.png';
 import instagram from '../../assets/instagram.png';
 import './FooterSection.css';
+import { TransitionsModal } from '../TransitionsModal/TransitionsModal';
 
-export const FooterSection = () => {
+export const FooterSection = ({ color }) => {
   return (
     <div>
       <div className="heading">Coffee with Me</div>
       <div className="subHeading">
         I am always excited to work on some awesome projects, message me and
         let's discuss over coffee.
+      </div>
+      <div className="footerImageSection">
+        <TransitionsModal buttonText={`Let's connect`} color={'black'} />
       </div>
       <div className="footerRow">
         <div>

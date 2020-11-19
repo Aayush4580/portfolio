@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Particles from 'react-particles-js';
 import './HomePageStyle.css';
 import $ from 'jquery';
@@ -7,12 +7,12 @@ import { AboutSection } from '../../component/AboutSection/AboutSection';
 import { CustomNumberSection } from '../../component/CustomNumberSection/CustomNumberSection';
 import { CustomProjectCardsSection } from '../../component/CustomProjectCardsSection/CustomProjectCardsSection';
 import { FooterSection } from '../../component/FooterSection/FooterSection';
-
+import { TransitionsModal } from '../../component/TransitionsModal/TransitionsModal';
 export const HomePage = () => {
   useEffect(() => {
     headerAnimation($);
   }, []);
-
+  const [showModal, setShowModal] = useState(false);
   return (
     <div>
       <Particles
@@ -123,7 +123,7 @@ export const HomePage = () => {
           </h1>
         </div>
         <div>
-          <h3 className="button">Coffee with me</h3>
+          <TransitionsModal buttonText={`Coffee with Me`} />
         </div>
       </div>
       <AboutSection />
