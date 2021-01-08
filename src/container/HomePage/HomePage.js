@@ -1,5 +1,14 @@
 import React, { useEffect } from 'react';
 import Particles from 'react-particles-js';
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll';
 import './HomePageStyle.css';
 import $ from 'jquery';
 import { headerAnimation } from '../../util/util';
@@ -8,7 +17,7 @@ import { CustomNumberSection } from '../../component/CustomNumberSection/CustomN
 import { CustomProjectCardsSection } from '../../component/CustomProjectCardsSection/CustomProjectCardsSection';
 import { FooterSection } from '../../component/FooterSection/FooterSection';
 import { TransitionsModal } from '../../component/TransitionsModal/TransitionsModal';
-import scroll from '../../assets/scroll.gif';
+import scrollImg from '../../assets/scroll.gif';
 
 export const HomePage = () => {
   useEffect(() => {
@@ -72,7 +81,6 @@ export const HomePage = () => {
         style={{
           width: '100%',
           // position: 'absolute',
-
           backgroundColor: 'black',
         }}
       />
@@ -103,11 +111,6 @@ export const HomePage = () => {
           </div>
         </div>
       </div>
-      {/* <div className="hamburger">
-          <div style={{ marginRight: '5%' }}>
-            <img alt="" src={hamburger} style={{ height: 45, width: 40 }} />
-          </div>
-        </div> */}
       <div className="transparentBox">
         <div style={{ fontSize: 50, fontWeight: 'bold', color: 'white' }}>
           Hey I'm Aayush
@@ -126,7 +129,14 @@ export const HomePage = () => {
         </div>
         <div>
           <TransitionsModal buttonText={`Coffee with Me`} />
-          <img alt="" className="scroll" src={scroll} />
+          <div style={{ color: 'white' }}>Scroll Down</div>
+          <img
+            alt=""
+            className="scroll"
+            src={scrollImg}
+            style={{ cursor: 'pointer' }}
+            onClick={() => scroll.scrollTo(900)}
+          />
         </div>
       </div>
       <AboutSection />

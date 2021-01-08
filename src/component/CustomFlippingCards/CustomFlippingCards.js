@@ -9,6 +9,7 @@ export const CustomFlippingCards = ({ image, headerText }) => {
       <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
         <div className="frontSide" onMouseEnter={() => setFlipped(!isFlipped)}>
           <img src={image} alt="" className="frontSideImage" />
+          <div className="frontSideText">{headerText}</div>
         </div>
         <div className="backSide" onMouseLeave={() => setFlipped(!isFlipped)}>
           <div>

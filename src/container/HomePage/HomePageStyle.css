@@ -30,7 +30,6 @@
   .particle {
     height: 78vh;
   }
-
   .navbar {
     display: none;
   }
@@ -44,13 +43,16 @@
     margin-top: 10px;
     align-items: center;
   }
+  .transparentBox {
+    top: 40%;
+  }
 }
 .transparentBox {
   width: 50%;
   height: 40%;
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%);
   justify-content: center;
   align-items: center;
@@ -100,11 +102,6 @@ h3.home-title {
 }
 .home-title a:hover {
   color: #f0ad4e;
-}
-.cd-intro {
-  /* width: 90%;
-  max-width: 768px; */
-  /* margin-left: 26px; */
 }
 .cd-headline.clip span {
   display: inline-block;
