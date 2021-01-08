@@ -1,11 +1,22 @@
 .numberSubContainer {
   width: 20%;
 }
+.flexDirectionRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.textStyle {
+  font-size: 40px;
+  font-weight: 400px;
+  color: #1aa6e2;
+}
 @media only screen and (max-width: 600px) {
   .numberSubContainer {
     width: 100%;
   }
   .flexDirectionRow {
-    flex-direction: column;
+    flex-direction: column !important;
   }
 }
