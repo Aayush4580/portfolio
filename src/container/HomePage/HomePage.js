@@ -1,23 +1,15 @@
+import $ from 'jquery';
 import React, { useEffect } from 'react';
 import Particles from 'react-particles-js';
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from 'react-scroll';
-import './HomePageStyle.css';
-import $ from 'jquery';
-import { headerAnimation } from '../../util/util';
+import { animateScroll as scroll, Element, scroller } from 'react-scroll';
+import scrollImg from '../../assets/scroll.gif';
 import { AboutSection } from '../../component/AboutSection/AboutSection';
 import { CustomNumberSection } from '../../component/CustomNumberSection/CustomNumberSection';
 import { CustomProjectCardsSection } from '../../component/CustomProjectCardsSection/CustomProjectCardsSection';
 import { FooterSection } from '../../component/FooterSection/FooterSection';
 import { TransitionsModal } from '../../component/TransitionsModal/TransitionsModal';
-import scrollImg from '../../assets/scroll.gif';
+import { headerAnimation } from '../../util/util';
+import './HomePageStyle.css';
 
 export const HomePage = () => {
   useEffect(() => {
@@ -104,9 +96,33 @@ export const HomePage = () => {
               color: 'white',
             }}
           >
-            <div className="navItem">About</div>
+            <div
+              className="navItem"
+              onClick={() =>
+                scroller.scrollTo('aboutSection', {
+                  duration: 1000,
+                  delay: 100,
+                  smooth: true,
+                  offset: 50,
+                })
+              }
+            >
+              About
+            </div>
             <div className="navItem">Skills</div>
-            <div className="navItem">Projects</div>
+            <div
+              className="navItem"
+              onClick={() =>
+                scroller.scrollTo('myProjects', {
+                  duration: 1000,
+                  delay: 100,
+                  smooth: true,
+                  offset: 50,
+                })
+              }
+            >
+              Projects
+            </div>
             <div className="navItem">Coffee with Me</div>
           </div>
         </div>
@@ -139,10 +155,14 @@ export const HomePage = () => {
           />
         </div>
       </div>
-      <AboutSection />
+      <Element name="aboutSection">
+        <AboutSection />
+      </Element>
       <div className="divider" />
       <CustomNumberSection className="numberSection" />
-      <CustomProjectCardsSection />
+      <Element name="myProjects">
+        <CustomProjectCardsSection />
+      </Element>
       <FooterSection />
     </div>
   );
