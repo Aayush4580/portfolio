@@ -123,7 +123,7 @@ export const HomePage = () => {
             >
               Projects
             </div>
-            <div className="navItem">Coffee with Me</div>
+            {/* <div className="navItem" >Coffee with Me</div> */}
           </div>
         </div>
       </div>
