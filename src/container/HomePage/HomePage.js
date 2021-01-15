@@ -160,6 +160,7 @@ export const HomePage = () => {
       </Element>
       <div className="divider" />
       <CustomNumberSection className="numberSection" />
+      <div className="divider" />
       <Element name="myProjects">
         <CustomProjectCardsSection />
       </Element>

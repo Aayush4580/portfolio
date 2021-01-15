@@ -13,7 +13,15 @@ export const AboutSection = () => {
           Hi I am Aayush Bhattacharya, a 27 year old Full Stack developer,
           YouTuber, and an Artist living in Kolkata, India. I am a coding nerd
           with Electrical Engineering background, currently working with awesome
-          folks at Deloitte.
+          folks at&nbsp;
+          <a
+            href="https://www2.deloitte.com/us/en.html/"
+            className="company"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Deloitte.
+          </a>
           <br />
           <br />
           Have a look at my YouTube Channel, skills or just connect with me on

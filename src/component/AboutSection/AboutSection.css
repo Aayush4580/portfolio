@@ -28,6 +28,11 @@
   font-family: 'ProximaNovaT';
   font-size: 65px;
 }
+.company {
+  text-decoration: none;
+  color: #1aa6e2;
+  font-weight: 600;
+}
 
 @media only screen and (max-width: 600px) {
   .aboutSectionContainer {

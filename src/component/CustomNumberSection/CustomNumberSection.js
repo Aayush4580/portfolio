@@ -10,8 +10,8 @@ export const CustomNumberSection = () => {
           <AnimatedNumber
             value={120000}
             formatValue={formatValue}
-            duration={1800}
-            delay={1000}
+            duration={2500}
+            delay={1800}
           />
         </div>
         <div>lines of code</div>
@@ -21,8 +21,8 @@ export const CustomNumberSection = () => {
           <AnimatedNumber
             value={23920000}
             formatValue={formatValue}
-            duration={1800}
-            delay={1000}
+            duration={2500}
+            delay={1800}
           />
         </div>
         <div>pixels rendered</div>
@@ -32,8 +32,8 @@ export const CustomNumberSection = () => {
           <AnimatedNumber
             value={52}
             formatValue={formatValue}
-            duration={1800}
-            delay={1000}
+            duration={2500}
+            delay={1800}
           />
         </div>
         <div>youtube videos</div>
@@ -43,8 +43,8 @@ export const CustomNumberSection = () => {
           <AnimatedNumber
             value={15}
             formatValue={formatValue}
-            duration={1800}
-            delay={1000}
+            duration={2500}
+            delay={1800}
           />
         </div>
         <div>projects completed</div>
