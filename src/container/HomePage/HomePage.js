@@ -109,7 +109,19 @@ export const HomePage = () => {
             >
               About
             </div>
-            <div className="navItem">Skills</div>
+            <div
+              className="navItem"
+              onClick={() =>
+                scroller.scrollTo('skillSection', {
+                  duration: 1000,
+                  delay: 100,
+                  smooth: true,
+                  offset: 50,
+                })
+              }
+            >
+              Skills
+            </div>
             <div
               className="navItem"
               onClick={() =>
@@ -158,9 +170,11 @@ export const HomePage = () => {
       <Element name="aboutSection">
         <AboutSection />
       </Element>
-      <div className="divider" />
-      <CustomNumberSection className="numberSection" />
-      <div className="divider" />
+      <Element name="skillSection">
+        <div className="divider" />
+        <CustomNumberSection className="numberSection" />
+        <div className="divider" />
+      </Element>
       <Element name="myProjects">
         <CustomProjectCardsSection />
       </Element>

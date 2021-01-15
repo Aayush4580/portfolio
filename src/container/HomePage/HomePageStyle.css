@@ -21,6 +21,7 @@
   border-bottom-width: 2.5px;
   border-bottom-style: solid;
   border-bottom-color: #1aa6e2;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
