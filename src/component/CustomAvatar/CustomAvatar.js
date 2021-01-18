@@ -1,17 +1,25 @@
 import React from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import { Avatar, makeStyles } from '@material-ui/core';
 import { Facebook, LinkedIn, MailOutline, YouTube } from '@material-ui/icons';
 import face from '../../assets/face.jpeg';
 import instagram from '../../assets/instagram.png';
 
 import './CustomAvatar.css';
+import { useEffect } from 'react';
 
 export const CustomAvatar = () => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
   const classes = useStyles();
   return (
     <div className="container">
-      <Avatar alt="Remy Sharp" src={face} className={classes.large} />
-      <div className="containerTwo">
+      <div data-aos="fade-down">
+        <Avatar alt="Remy Sharp" src={face} className={classes.large} />
+      </div>
+      <div className="containerTwo" data-aos="slide-right">
         <YouTube
           onClick={() =>
             window.open('https://www.youtube.com/aayushBhattacharya')

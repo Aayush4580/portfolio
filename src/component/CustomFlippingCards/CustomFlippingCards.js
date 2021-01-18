@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
+import ArrowForwardIosOutlinedIcon from '@material-ui/icons/ArrowForwardIosOutlined';
 import './CustomFlippingCardsStyle.css';
 
 export const CustomFlippingCards = ({ image, headerText }) => {
@@ -14,8 +15,15 @@ export const CustomFlippingCards = ({ image, headerText }) => {
         <div className="backSide" onMouseLeave={() => setFlipped(!isFlipped)}>
           <div>
             <img src={image} alt="" className="backSideImage" />
-
-            <div className="backsideText">{headerText}</div>
+            <div className="backsideTextButton">
+              <div className="backsideText">
+                {'check projects'}
+                <ArrowForwardIosOutlinedIcon
+                  className="iconStyle"
+                  style={{ height: 15, width: 15 }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </ReactCardFlip>

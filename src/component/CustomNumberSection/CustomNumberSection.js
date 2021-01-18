@@ -1,7 +1,8 @@
 import React from 'react';
 import AnimatedNumber from 'animated-number-react';
 import './CustomNumberSection.css';
-import ChartComponent from '../ChartComponent/ChartComponent';
+import { ChartComponent } from '../ChartComponent/ChartComponent';
+
 const formatValue = (value) => value.toFixed(0);
 export const CustomNumberSection = () => {
   return (

@@ -1,13 +1,19 @@
 import React from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 import { CustomAvatar } from '../CustomAvatar/CustomAvatar';
 import './AboutSection.css';
 export const AboutSection = () => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  }, []);
   return (
     <div className="aboutSectionContainer">
       <div className="avatar">
         <CustomAvatar />
       </div>
-      <div className="aboutSection">
+      <div className="aboutSection" data-aos="slide-left">
         <div className="aboutText">About Me</div>
         <div style={{ textAlign: 'left', lineHeight: '1.5' }}>
           Hi I am Aayush Bhattacharya, a 27 year old Full Stack developer,
