@@ -16,10 +16,10 @@ export const CustomAvatar = () => {
   const classes = useStyles();
   return (
     <div className="container">
-      <div data-aos="fade-down">
+      <div>
         <Avatar alt="Remy Sharp" src={face} className={classes.large} />
       </div>
-      <div className="containerTwo" data-aos="slide-right">
+      <div className="containerTwo" data-aos="fade-right">
         <YouTube
           onClick={() =>
             window.open('https://www.youtube.com/aayushBhattacharya')
