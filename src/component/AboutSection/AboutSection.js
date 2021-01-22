@@ -13,7 +13,7 @@ export const AboutSection = () => {
       <div className="avatar">
         <CustomAvatar />
       </div>
-      <div className="aboutSection" data-aos="slide-left">
+      <div className="aboutSection">
         <div className="aboutText">About Me</div>
         <div style={{ textAlign: 'left', lineHeight: '1.5' }}>
           Hi I am Aayush Bhattacharya, a 27 year old Full Stack developer,

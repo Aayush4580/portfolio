@@ -19,7 +19,7 @@ export const CustomAvatar = () => {
       <div>
         <Avatar alt="Remy Sharp" src={face} className={classes.large} />
       </div>
-      <div className="containerTwo" data-aos="fade-right">
+      <div className="containerTwo" data-aos="fade-down">
         <YouTube
           onClick={() =>
             window.open('https://www.youtube.com/aayushBhattacharya')
